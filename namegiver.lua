@@ -1,5 +1,5 @@
 local minimum_number = 1
-local maximum_number = 10000
+local maximum_number = 50
 
 local firstnames = {
     "Humble",
@@ -67,7 +67,6 @@ local firstnames = {
     "Absolute",
     "Great",
     "Good",
-    "Trash",
     "Heroic",
     "Villainess",
     "Crappy",
@@ -116,6 +115,41 @@ local firstnames = {
     "Working",
     "Hunting",
     "Trespassing",
+    "Grasping",
+    "Lovely",
+    "Rich",
+    "Classy",
+    "Boring",
+    "Fun",
+    "Mean",
+    "Rude",
+    "Adament",
+    "Likable",
+    "Friendly",
+    "Quiet",
+    "Loud",
+    "Treacherous",
+    "Harmless",
+    "Weak",
+    "Tiny",
+    "Lord",
+    "Big",
+    "Large",
+    "Kissing",
+    "Movable",
+    "Heavy",
+    "Healthy",
+    "Unhealthy",
+    "Mini",
+    "Unborn",
+    "Teary",
+    "Spicy",
+    "Personal",
+    "Stinging",
+    "Singing",
+    "Dreaming",
+    "Cowardly",
+    "Moping"
 }
 
 local lastnames = {
@@ -186,6 +220,25 @@ local lastnames = {
     "Whale",
     "Walrus",
     "Pants",
+    "Paw",
+    "Water",
+    "Box",
+    "Suitcase",
+    "Suit",
+    "Shoe",
+    "Wasp",
+    "Berry",
+    "Eagle",
+    "Dinosaur",
+    "TRex",
+    "Potato",
+    "Carrot",
+    "Brocolli",
+    "Lizard",
+    "Fly",
+    "Llama",
+    "Horse",
+    "Chicken",
 }
 
 local namechosen = firstnames[math.random(1, #firstnames)]..lastnames[math.random(1, #lastnames)]
