@@ -1,5 +1,5 @@
 local minimum_number = 1
-local maximum_number = 50
+local maximum_number = 1000
 
 local firstnames = {
     "Humble",
@@ -94,7 +94,7 @@ local firstnames = {
     "Poisonous",
     "Trusty",
     "Trustful",
-    "Venomess",
+    "Venomous",
     "Dangerous",
     "Trusting",
     "Hindering",
@@ -149,7 +149,31 @@ local firstnames = {
     "Singing",
     "Dreaming",
     "Cowardly",
-    "Moping"
+    "Moping",
+    "Rotten",
+    "Rotting",
+    "Old",
+    "Dancing",
+    "Weirdest",
+    "Shopping",
+    "Popping",
+    "Armed",
+    "Irritating",
+    "Annoying",
+    "Noisy",
+    "Twisted",
+    "Germy",
+    "Sickly",
+    "Spikey",
+    "Loose",
+    "Entranced",
+    "Magical",
+    "Timid",
+    "Confident",
+    "Jumpy",
+    "Faulty",
+    "Shy",
+    "Chaotic"
 }
 
 local lastnames = {
@@ -230,17 +254,52 @@ local lastnames = {
     "Berry",
     "Eagle",
     "Dinosaur",
-    "TRex",
     "Potato",
     "Carrot",
-    "Brocolli",
+    "Broccoli",
     "Lizard",
     "Fly",
     "Llama",
     "Horse",
     "Chicken",
+    "Person",
+    "Queen",
+    "Bishop",
+    "Knight",
+    "Finger",
+    "Mouth",
+    "Nose",
+    "Nail",
+    "Gravy",
+    "Knee",
+    "Elbow",
+    "Friend",
+    "Wife",
+    "Husband",
+    "Weekday",
+    "Idiot",
+    "Newbie",
+    "Noob",
+    "Cleric",
+    "Cashier",
+    "Worker",
+    "Shopper",
+    "Germ",
+    "Towel",
+    "Blanket",
+    "Sheets",
+    "Adventurer",
+    "Rookie",
+    "Monkey",
+    "Spider",
+    "Skeleton",
+    "Faucet",
+    "Bully",
+    "Locker",
+    "Locksmith",
 }
 
+math.randomseed(os.time() * math.random(1, 100))
 local namechosen = firstnames[math.random(1, #firstnames)]..lastnames[math.random(1, #lastnames)]
 local numberchosen = math.random(minimum_number, maximum_number)
 print(namechosen..numberchosen)
