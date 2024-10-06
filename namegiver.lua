@@ -173,7 +173,12 @@ local firstnames = {
     "Jumpy",
     "Faulty",
     "Shy",
-    "Chaotic"
+    "Chaotic",
+    "Drenched",
+    "Wet",
+    "Swimming",
+    "Diving",
+    "Mischievous",
 }
 
 local lastnames = {
@@ -280,6 +285,7 @@ local lastnames = {
     "Idiot",
     "Newbie",
     "Noob",
+    "Toy",
     "Cleric",
     "Cashier",
     "Worker",
@@ -297,9 +303,14 @@ local lastnames = {
     "Bully",
     "Locker",
     "Locksmith",
+    "Nat",
+    "Rose",
+    "Eagle",
+    "Hawk",
+    "Troublemaker",
 }
 
-math.randomseed(os.time() * math.random(1, 100))
+math.randomseed(math.floor(os.time() * (math.random(1, 1000) / math.random(1, 100))))
 local namechosen = firstnames[math.random(1, #firstnames)]..lastnames[math.random(1, #lastnames)]
 local numberchosen = math.random(minimum_number, maximum_number)
 print(namechosen..numberchosen)
